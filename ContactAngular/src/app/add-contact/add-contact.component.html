@@ -1,1 +1,17 @@
-<p>add-contact works!</p>
+<div class="row">
+    <h1 class="col"> Ajouter un contact</h1>
+</div>
+<form>
+    <div class="row">
+        <input class="form-control col" type="text" placeholder="Votre Nom : " name="nom" [(ngModel)]="nom" />
+    </div>
+    <div class="row">
+        <input class="form-control col" type="text" placeholder="Votre Prénom : " name="prenom" [(ngModel)]="prenom" />
+    </div>
+    <div class="row">
+        <input class="form-control col" type="text" placeholder="Votre Email : " name="email" [(ngModel)]="email" />
+    </div>
+    <div class="row">
+        <button class="col btn btn-danger" (click)="Add()">Ajouter</button>
+    </div>
+</form>

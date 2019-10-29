@@ -12,4 +12,8 @@ export class ApiService {
   get = (url) => {
     return this.http.get(this.baseUrl + '/'+url);
   }
+
+  post = (url, data) => {
+    return this.http.post(this.baseUrl+"/"+url,data);
+  }
 }

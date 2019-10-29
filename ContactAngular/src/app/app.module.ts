@@ -8,7 +8,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
 import { ApiService } from './api.service';
 import {HttpClientModule} from "@angular/common/http";
-
+import {FormsModule, ReactiveFormsModule} from "@angular/forms"
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,9 @@ import {HttpClientModule} from "@angular/common/http";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
