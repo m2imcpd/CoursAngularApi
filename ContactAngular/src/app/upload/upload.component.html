@@ -1,0 +1,11 @@
+<p>upload File!</p>
+<div class="row">
+<input type="file" #file (change)="uploadFiles(file.files)" />
+</div>
+<div class="row">
+
+    {{pourcentage}}
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" [style.width] ="pourcentage +'%'" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>

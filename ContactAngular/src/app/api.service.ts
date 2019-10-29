@@ -23,4 +23,9 @@ export class ApiService {
   put = (url,data) => {
     return this.http.put(this.baseUrl+"/"+url,data);
   }
+
+  upload = (url, formdata)=> {
+    //reportProgress => pour ecouter la progression de l'upload; observe => pour ecouter la totalité de l'event et non uniquement la réponse du serveur
+    return this.http.post(this.baseUrl+'/'+url, formdata,{reportProgress: true, observe:'events'})
+  }
 }
