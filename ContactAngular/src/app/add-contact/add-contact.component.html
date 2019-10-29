@@ -1,5 +1,5 @@
 <div class="row">
-    <h1 class="col"> Ajouter un contact</h1>
+    <h1 class="col"><span *ngIf='id==null;else idNonNull'> Ajouter un contact</span><ng-template #idNonNull><span>Modifier un contact</span></ng-template></h1>
 </div>
 <form>
     <div class="row">
@@ -12,6 +12,6 @@
         <input class="form-control col" type="text" placeholder="Votre Email : " name="email" [(ngModel)]="email" />
     </div>
     <div class="row">
-        <button class="col btn btn-danger" (click)="Add()">Ajouter</button>
+        <button class="col btn btn-danger" (click)="Add()"><span *ngIf='id==null;else BidNonNull'> Ajouter</span><ng-template #BidNonNull><span>Modifier</span></ng-template></button>
     </div>
 </form>

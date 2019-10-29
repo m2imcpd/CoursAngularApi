@@ -16,4 +16,11 @@ export class ApiService {
   post = (url, data) => {
     return this.http.post(this.baseUrl+"/"+url,data);
   }
+
+  delete = (url) => {
+    return this.http.delete(this.baseUrl+"/"+url);
+  }
+  put = (url,data) => {
+    return this.http.put(this.baseUrl+"/"+url,data);
+  }
 }

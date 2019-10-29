@@ -7,6 +7,7 @@ import { AddContactComponent } from './add-contact/add-contact.component';
 const routes: Routes = [
   {path : "", component : ContactsComponent},
   {path : "Add", component : AddContactComponent},
+  {path : "update/:id", component : AddContactComponent},
 ];
 
 @NgModule({
