@@ -1,0 +1,8 @@
+app-side-bar {
+    background-color: black;
+    color: #FFF;
+    min-height: 100%;
+}
+app-root {
+    height: 100%;
+}
