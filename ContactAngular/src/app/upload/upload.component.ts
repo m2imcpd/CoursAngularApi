@@ -19,7 +19,7 @@ export class UploadComponent implements OnInit {
       if(files.length === 0)
       return 
       formData.append('image', files[0]);
-      console.log(formData);
+      //console.log(formData);
       this.api.upload('upload',formData).subscribe(resEvent=> {
           if(resEvent.type == HttpEventType.UploadProgress){
             this.pourcentage = Math.round(100 * resEvent.loaded / resEvent.total);
