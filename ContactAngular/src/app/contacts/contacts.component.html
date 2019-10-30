@@ -1,4 +1,5 @@
 <div *ngFor="let contact of contacts" class="row">
+    <div class="col"><img *ngIf="contact.urlImage != null" src="{{contact.urlImage}}" width="25px"></div>
     <div class="col">{{contact.nom}}</div>
     <div class="col">{{contact.prenom}}</div>
     <div class="col">{{contact.email}}</div>

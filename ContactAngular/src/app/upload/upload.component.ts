@@ -12,6 +12,7 @@ export class UploadComponent implements OnInit {
   constructor(private api : ApiService) { }
 
   ngOnInit() {
+   
   }
 
   uploadFiles = (files) => {

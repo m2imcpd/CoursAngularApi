@@ -3,6 +3,9 @@
 </div>
 <form>
     <div class="row">
+        <input type="file" #file (change)="UploadFile(file.files)" />
+    </div>
+    <div class="row">
         <input class="form-control col" type="text" placeholder="Votre Nom : " name="nom" [(ngModel)]="nom" />
     </div>
     <div class="row">

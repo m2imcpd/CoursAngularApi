@@ -23,6 +23,7 @@ export class ContactsComponent implements OnInit {
         //re-actualiser les contacts en utilisant le get de l'api
         this.api.get('contact').subscribe(res=> {
           this.contacts = res;
+          console.log(this.contacts);
         })
       }
       alert(res.message);
