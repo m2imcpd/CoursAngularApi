@@ -9,14 +9,18 @@ import { AddContactComponent } from './add-contact/add-contact.component';
 import { ApiService } from './api.service';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { UploadComponent } from './upload/upload.component'
+import { UploadComponent } from './upload/upload.component';
+import { TestJwtComponent } from './test-jwt/test-jwt.component';
+import { ProtectedByJwtComponent } from './protected-by-jwt/protected-by-jwt.component'
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
     ContactsComponent,
     AddContactComponent,
-    UploadComponent
+    UploadComponent,
+    TestJwtComponent,
+    ProtectedByJwtComponent
   ],
   imports: [
     BrowserModule,
