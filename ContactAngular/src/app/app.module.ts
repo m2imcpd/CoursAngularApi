@@ -11,7 +11,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { UploadComponent } from './upload/upload.component';
 import { TestJwtComponent } from './test-jwt/test-jwt.component';
-import { ProtectedByJwtComponent } from './protected-by-jwt/protected-by-jwt.component'
+import { ProtectedByJwtComponent } from './protected-by-jwt/protected-by-jwt.component';
+import { LoginComponent } from './login/login.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ProtectedByJwtComponent } from './protected-by-jwt/protected-by-jwt.com
     AddContactComponent,
     UploadComponent,
     TestJwtComponent,
-    ProtectedByJwtComponent
+    ProtectedByJwtComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<form>
+    <div class="row">
+        <input class="form-control col" type="text" name="email" [(ngModel)]="email" placeholder="Votre email" />
+    </div>
+    <div class="row">
+        <input class="form-control col" type="password" name="password" [(ngModel)]="password" placeholder="Votre mot de passe" />
+    </div>
+    <div class="row">
+        <button type="submit" class="col btn btn-danger" (click)="LogIn()">se connecter</button>
+    </div>
+</form>

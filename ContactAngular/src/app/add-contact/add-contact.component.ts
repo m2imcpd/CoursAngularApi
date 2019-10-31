@@ -17,6 +17,14 @@ export class AddContactComponent implements OnInit {
   constructor(private api: ApiService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.api.testAccess('testLogin').subscribe((res:any)=> {
+      if(res.error)
+      {
+        this.router.navigate(['/login']);
+      }
+    }, err=> {
+      this.router.navigate(['/login']);
+    })
     if (this.route.snapshot.params.id != undefined) {
       this.api.get('contact/' + this.route.snapshot.params.id).subscribe((res: any) => {
         this.id = res.id;
